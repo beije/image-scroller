@@ -1,0 +1,27 @@
+/* ------------------------------------------------------
+ * Image scroll
+/* ------------------------------------------------------ */
+
+[data-bh-scroll-image] > img {
+	display: block;
+	opacity: 0;
+
+	-webkit-transition: all 300ms linear;
+	transition: all 300ms linear;
+
+ 	-ms-transform: translate(0px, 100%);
+   	 -webkit-transform: translate(0px, 100%);
+    transform: translate(0px, 100%);
+}
+[data-bh-scroll-image]:nth-child(2n) > img {
+	-webkit-transition: all 400ms linear;
+	transition: all 400ms linear;
+}
+
+[data-bh-scroll-image].active > img {
+	opacity: 1;
+
+ 	-ms-transform: translate(0px, 0px);
+   	 -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+}

@@ -1,0 +1,15 @@
+body {
+	width: 100%;
+}
+
+.scroll-down-notice {
+	width: 100px;
+	margin: 100px auto;
+}
+.content {
+	max-width: 540px;
+	margin: 100px auto;
+}
+.content img {
+	width: 100%
+}
